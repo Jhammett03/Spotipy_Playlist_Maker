@@ -1,0 +1,61 @@
+Spotify Playlist Creator
+This Python script allows users to create Spotify playlists based on various criteria such as artist, song, genre, or album.
+
+Prerequisites
+Before running the script, you need to:
+
+Install Python (version 3.x)
+Install the Spotipy library (pip install spotipy)
+Have a Spotify account
+Register your application on the Spotify Developer Dashboard to get your client ID and client secret.
+Setup
+Clone the repository:
+
+bash
+Copy code
+git clone https://github.com/yourusername/spotify-playlist-creator.git
+Navigate to the project directory:
+
+bash
+Copy code
+cd spotify-playlist-creator
+Install dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Set up environment variables for your Spotify client ID and client secret:
+
+On Windows:
+
+bash
+Copy code
+set SPOTIPY_CLIENT_ID=your_client_id
+set SPOTIPY_CLIENT_SECRET=your_client_secret
+On macOS/Linux:
+
+bash
+Copy code
+export SPOTIPY_CLIENT_ID=your_client_id
+export SPOTIPY_CLIENT_SECRET=your_client_secret
+Replace your_client_id and your_client_secret with the values obtained from the Spotify Developer Dashboard.
+
+Usage
+Run the script and follow the prompts to create playlists:
+
+IMPORTANT: 
+replace the value of the username variable in the main function with your spotify username
+
+bash
+python playlist_creator.py
+Options:
+Create playlist from artist: Enter the name of an artist to create a playlist based on their top tracks and related artists' tracks.
+
+Create playlist from song: Enter the name of a song and the artist's name to create a playlist based on similar tracks.
+
+Create playlist from genre: Enter a genre to create a playlist with tracks from that genre.
+
+Create playlist from album: Enter the name of an album and the artist's name to create a playlist with tracks from that album and related albums.
+
+Exit: Quit the script.
+
